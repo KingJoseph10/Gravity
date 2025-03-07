@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="Side-bar">
+      <h3 id="title"> Design Rationale </h3>
+          
+          <b>Design Summary:</b>
+          This code creates a highly interactive physics simulation that allows users to add and manipulate shapes
+           in a dynamic environment. Built using Matter.js, a 2D physics engine, the simulation provides users with
+            the ability to explore different physical environments, toggle gravity on or off, and simulate electromagnetic
+             forces between objects. It aims to create an educational and engaging platform for users to visualize and interact 
+             with fundamental physics principles such as collision, gravity, and force interactions.
+          <ol>
+            <b>Key Features and Functions:</b>
+            <li>
+                Shape Interaction and Manipulation:
+
+                Users can add various shapes (circle, square, triangle) to the simulation by clicking the corresponding buttons. Each shape is created with different physical properties (like restitution, density, and friction), making them behave differently in the simulation.
+                Users can remove the last added shape, allowing for dynamic adjustments to the environment.
+
+            </li><br>
+            <b>Use Cases:</b>
+            <li>
+                Physics Experimentation:
+
+                Users can experiment with different physical setups, such as adding or removing shapes, toggling gravity, and applying electromagnetic forces. This allows them to explore how these factors influence the behavior of objects in space and other environments.
+                It could be used in virtual labs or physics demonstrations to illustrate complex concepts.
+                
+            </li><br>
+            
+          
+          </li>
+          
+        </p>
+    </div>
+  </div>
+  <p id="Textbox">This physics simulation offers a versatile platform for experimenting with and visualizing complex physical phenomena. 
+    Its use of Matter.js allows for accurate and real-time simulation of 2D physics, while its interactive interface provides users with the tools to modify 
+    the environment and forces to explore how they affect object behavior.</p>
+  <div id="toolbar">
+    <button class="toggle-button" onclick="addShape('circle')">Add Circle</button>
+    <button class="toggle-button" onclick="addShape('square')">Add Square</button>
+    <button class="toggle-button" onclick="addShape('triangle')">Add Triangle</button>
+    <button class="toggle-button" onclick="removeShape()">Remove Last</button>
+    <button id="gravity-toggle" class="toggle-button">Gravity Enabled</button>
+    
+
+   
+</div>
+    <div id="canvas"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    background-image: url(https://64.media.tumblr.com/90f6cdcbc51c53fa4ca7294da96fc3f8/tumblr_pios19KpQC1ufq8wko1_1280.gif);
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+#canvas {
+    width: 100%;
+    height: 100%;
+}
+
+#toolbar {
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: right;
+    box-sizing: border-box;
+    position: absolute;
+    top: 2%;
+    right: 1%
+
+}
+
+.toggle-button {
+    width: max-content;
+    height: 50px;
+    background-color: rgba(194, 181, 181, 0.9);
+    color: #ebe7e7;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+.toggle-button:hover{
+    background-color: rgba(107, 227, 243, 0.5);
+    color: #fff;
+}
+
+.toggle-button.checked{
+    background-color: rgba(41, 37, 236, 0.966);
+    color: #fff;
+}
+
+
+
+
+#Textbox{
+    position: absolute;
+    width: 500px;
+    height: max-content;
+    background-color: rgba(168, 128, 255, 0.1);
+    backdrop-filter: blur(5px);
+    z-index: 2;
+    border: #fff;
+    border-width: 1px;
+    border-radius: 8px;
+    padding: 20px;
+    font-size: 16px;
+    top: 40%;
+}
+#text{
+    position: absolute;
+font-size: 50px;
+letter-spacing: 3px;
+top: 30%;
+}
+
+  
+  .Side-bar {
+    position: absolute;
+    top: 5%;
+    left: 2.5vw;
+    width: 20%;
+    height: max-content;
+    background-color: rgba(0, 0, 5, 0.8);
+    z-index: 1;
+    border: #fff;
+    border-width: 1px;
+    border-radius: 8px;
+    padding: 20px;
+  }
